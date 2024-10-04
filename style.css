@@ -1,0 +1,504 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color:#0b0c10;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+
+ /*CABEÇALHO */
+
+.logo img{
+    height: 180px;
+    width: 180px;
+}
+.interface{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px 6%;
+    background-color: #1f2833;
+    border-radius: 0px 0px 2% 2%;
+    box-shadow: 0px 8px 16px #c5c6c71e;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #c5c6c7;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+header a:hover{
+    color: #66fcf1;
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#66fcf1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+header .btn button:hover{
+    box-shadow: 0px 0px 10px #01a8a07c;
+}
+
+/* Corpo */
+
+section .site{
+    padding: 40px 6%;
+}
+
+.perfil img{
+    margin-top: 30px;
+    position: relative;
+    width: 300px;
+    border-radius: 50%;
+}
+
+section.site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.site .direita-site h1{
+    color: #fff;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.site .direita-site h1 span{
+    color: #66fcf1;
+    font-size: 70px;
+}
+
+.site .direita-site p{
+    color: #fff;
+    margin: 36px 0;
+    font-size:18px;
+}
+
+/* Redes de Contato */
+
+.redes ul{
+    list-style-type: none;
+
+    display: flex;
+    position: relative;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.redes ul li{
+    width: 80px;
+    height: 80px;
+
+    background-color: #fff;
+    box-shadow: 0 8px 25px #00000045;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    transition: .2s;
+}
+
+.redes ul li:hover{
+    width: 180px;
+}
+
+.redes ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;
+    transition: .2s;
+    transition-delay: .1s;
+}
+.redes ul li:hover .icon{
+    transform: scale(0);
+}
+
+.redes ul li .text{
+    color: #fff;
+    font-size: 22px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+.redes ul li span{
+    position: absolute;
+}
+.redes ul li:hover .text{
+    transform: scale(1);
+}
+
+.redes ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+.redes ul li:hover::before{
+    opacity: 1;
+}
+
+
+/* Certifications.html*/
+
+section.corpo{
+    padding: 40px 6%;
+}
+
+section.corpo .flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:60px;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+
+section.corpo .cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+section.corpo .cursos:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 12px #ffffff6e;
+}
+
+
+section.corpo .cursos i{
+    font-size: 80px;
+    color: #66fcf1;
+}
+
+section.corpo .cursos h3{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.course-image {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 15px; 
+}
+
+/* Projects */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.project-card {
+    background-color: #1f2833;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    transition: .2s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card i {
+    font-size: 50px;
+    color: #66fcf1;
+}
+
+.project-card h3 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.project-card p {
+    font-size: 18px;
+    color: #c5c6c7;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(102, 252, 241, 0.5);
+}
+
+.project-card {
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: #66fcf1;
+    font-size: 28px;
+}
+
+.project-card p {
+    color: #c5c6c7;
+}
+
+.project-card ul {
+    color: #c5c6c7;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-stack img {
+    width: 40px;
+    height: 40px;
+}
+
+.spacing {
+    margin: 40px 0;
+}
+
+/* Career */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.career-card {
+    background-color: #1f2833;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+    transition: .3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.career-card i {
+    font-size: 50px;
+    color: #66fcf1;
+}
+
+.career-card h3 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.career-card p {
+    font-size: 18px;
+    color: #c5c6c7;
+    margin-bottom: 15px;
+}
+
+.career-card p strong {
+    font-size: 20px;
+    color: #66fcf1;
+}
+
+.career-card ul {
+    margin-top: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.career-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.career-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(102, 252, 241, 0.5);
+}
+
+/* Contact */
+
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.contact-form label {
+    color: #c5c6c7;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #66fcf1;
+    border-radius: 5px;
+    background-color: #0b0c10;
+    color: #c5c6c7;
+}
+
+.contact-form button {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #01a8a0;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.contact-info h2 {
+    color: #66fcf1;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #1f2833;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.contact-info h2 {
+    color: #66fcf1;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    color: #66fcf1;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.info-item p {
+    color: #c5c6c7;
+    font-size: 16px;
+}
+
+.info-item a {
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.info-item a:hover {
+    color: #01a8a0;
+}
+
+/* uselinks */
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.link-item {
+    background-color: #1f2833;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.link-item:hover {
+    transform: scale(1.05);
+}
+
+.link-item h2 {
+    color: #66fcf1;
+    margin: 10px 0;
+}
+
+.link-item p {
+    color: #c5c6c7;
+    font-size: 14px;
+}
+
+.link-item i {
+    color: #66fcf1;
+    font-size: 2em;
+}
