@@ -44,3 +44,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, index * 150);
             });
         });
+
+const careerCards = document.querySelectorAll('.career-card');
+
+    careerCards.forEach(card => {
+        card.style.opacity = '0'; 
+        card.style.transform = 'translateY(20px)'; 
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+
+        window.addEventListener('load', () => {
+            card.style.opacity = '1'; 
+            card.style.transform = 'translateY(0)'; 
+        });
+    });
+
+    careerCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.transition = 'transform 0.3s ease-in-out';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
