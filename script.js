@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('DOMContentLoaded', () => {
         careerCards.forEach(card => {
             card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
+            card.style.transform = 'translateY(10px)';
             card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
 
