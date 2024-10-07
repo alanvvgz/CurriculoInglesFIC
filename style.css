@@ -507,3 +507,20 @@ header.scrolled {
     background-color: #000; 
     transition: background-color 0.3s ease;
 }
+
+.cursos h3 {
+    font-size: 1.5em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #333; 
+}
+
+.cursos h3:hover {
+    transform: scale(1.1); 
+    color: #007BFF; 
+}
+
+.cursos {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
