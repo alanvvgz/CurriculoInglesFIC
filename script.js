@@ -21,3 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Elemento com o ID "name" não foi encontrado');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cursos = document.querySelectorAll('.cursos');
+
+    cursos.forEach((curso, index) => {
+        
+        setTimeout(() => {
+            curso.style.opacity = '1'; 
+            curso.style.transform = 'translateY(0)'; 
+        }, index * 300); 
+    });
+});
