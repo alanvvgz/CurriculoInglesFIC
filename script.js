@@ -5,14 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = "Lucas Rodrigo Silva";
         let index = 0;
 
-        // Limpa o conteúdo do elemento antes de começar a escrever
         typedText.innerHTML = "";
 
         function typeWriter() {
             if (index < text.length) {
                 typedText.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(typeWriter, 100); // Velocidade da digitação
+                setTimeout(typeWriter, 100);
             }
         }
 
