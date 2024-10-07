@@ -45,17 +45,21 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-const careerCards = document.querySelectorAll('.career-card');
+    const careerCards = document.querySelectorAll('.career-card');
 
-    careerCards.forEach(card => {
-        card.style.opacity = '0'; 
-        card.style.transform = 'translateY(20px)'; 
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-
-        window.addEventListener('load', () => {
-            card.style.opacity = '1'; 
-            card.style.transform = 'translateY(0)'; 
+    window.addEventListener('DOMContentLoaded', () => {
+        careerCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
+
+        setTimeout(() => {
+            careerCards.forEach(card => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            });
+        }, 100);
     });
 
     careerCards.forEach(card => {
