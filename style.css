@@ -502,3 +502,8 @@ section.corpo .cursos h3{
     color: #66fcf1;
     font-size: 2em;
 }
+
+header.scrolled {
+    background-color: #000; 
+    transition: background-color 0.3s ease;
+}
