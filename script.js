@@ -32,3 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }, index * 300); 
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
+
+            projectCards.forEach((card, index) => {
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'rotateY(0)';
+                }, index * 150);
+            });
+        });
