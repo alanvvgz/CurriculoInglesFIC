@@ -540,3 +540,21 @@ header.scrolled {
     width: 40px; 
     margin: 5px;
 }
+
+.group {
+    background-color: #1f2833;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.group h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.group p {
+    font-size: 1.2rem;
+    margin: 0;
+}
